@@ -1,0 +1,227 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Temp &amp; Hum click &mdash; Temp &amp; Humidity Click 0.1 documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/zerynth.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Temp &amp; Humidity Click 0.1 documentation" href="index.html"/>
+        <link rel="prev" title="Temp &amp; Humidity Click" href="index.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="index.html" class="fa fa-home"> Temp & Humidity Click</a>
+        
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Temp &amp; Hum click</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Temp & Humidity Click</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Temp &amp; Hum click</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/temp_hum_click.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <span class="target" id="module-TempHumClick"></span><div class="section" id="temp-hum-click">
+<h1>Temp &amp; Hum click<a class="headerlink" href="#temp-hum-click" title="Permalink to this headline">¶</a></h1>
+<p>This module contains the <a class="reference internal" href="#module-TempHumClick" title="TempHumClick"><code class="xref py py-class docutils literal"><span class="pre">TempHumClick</span></code></a> carries STs HTS221
+temperature and relative humidity sensor. Its highlight is that it
+outputs its measurement in a 16-bit resolution and has a high
+rH sensitivity of 0.004% (although the accuracy range. In comparison,
+HTU21D click, HDC1000 click and SHT1x click all output a 12-14 bit
+resolution signal.</p>
+<p><strong>Resources</strong></p>
+<ul class="simple">
+<li>Datasheet: <a class="reference external" href="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00116291.pdf">http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00116291.pdf</a></li>
+<li>Product Page: <a class="reference external" href="http://www.mikroe.com/click/temp-hum/">http://www.mikroe.com/click/temp-hum/</a></li>
+<li>Product Manual: <a class="reference external" href="http://www.mikroe.com/downloads/get/2383/temp_hum_click_user_manual_v100.pdf">http://www.mikroe.com/downloads/get/2383/temp_hum_click_user_manual_v100.pdf</a></li>
+</ul>
+<dl class="class">
+<dt id="TempHumClick.TempHumClick">
+<em class="property">class </em><code class="descname">TempHumClick</code><a class="headerlink" href="#TempHumClick.TempHumClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an intance of a new TempHumClick.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>drvsel</strong> &#8211; I2C Bus used <cite>( I2C0, I2C0 )</cite></li>
+<li><strong>int_pin</strong> &#8211; Interrupt pin used for events</li>
+<li><strong>address</strong> &#8211; Slave address, default 0x5f</li>
+<li><strong>clk</strong> &#8211; Clock speed, default 400kHz</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<div class="highlight-python"><div class="highlight"><pre><span class="n">temp_hum</span> <span class="o">=</span> <span class="n">tempnhum_click</span><span class="o">.</span><span class="n">TempHumClick</span><span class="p">(</span> <span class="n">I2C1</span><span class="p">,</span><span class="n">D31</span> <span class="p">)</span>
+<span class="n">temp</span><span class="p">,</span> <span class="n">hum</span> <span class="o">=</span> <span class="n">temp_hum</span><span class="o">.</span><span class="n">get_temp_humidity</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="TempHumClick.get_temp_humidity">
+<code class="descname">get_temp_humidity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TempHumClick.get_temp_humidity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves both temperature and humidity in one call.</p>
+<p>returns temp, humidity</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Temp &amp; Humidity Click"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright MikroElektronika.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ <script type="text/javascript">
+ var vurl
+ if(location.href.indexOf("127.0.0.1")>=0) vurl=location.protocol+"//"+location.host+"/docs"
+ else vurl="http://doc.zerynth.com"
+ $(document).ready(function(){
+                   $('.wy-breadcrumbs a:contains("Docs")').before('<a href="'+vurl+'">Zerynth</a> &#187;')
+                   $('.wy-side-nav-search > a').removeClass("fa-home").removeClass("fa")
+                   $('.wy-side-nav-search').prepend('<div class="viper-circle"><a href="'+vurl+'"><span style="color:#1c5e60" class="zerynth-Logo2"></span></a></div>')
+ })
+ </script>
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "copyright": "MikroElektronika",
+    "title": "Temp & Humidity Click",
+    "text": "Temp&Hum click carries ST’s HTS221 temperature and relative humidity sensor. Its temperature measurement accuracy is ±1°C within a 0-60°C range.",
+    "version": "0.1",
+    "files":[
+        ["Temp&Hum click","temp_hum_click.py"]
+            ]
+}
